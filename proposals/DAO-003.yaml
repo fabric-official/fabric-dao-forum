@@ -1,0 +1,17 @@
+id: DAO-003
+title: "Allocate 5,000 FAB to Developer Bounty Fund"
+summary: "Reserves 5,000 FAB from the DAO treasury for the first official Fabric bounty program to incentivize agent creation, CLI tooling, and tutorials."
+details: |
+  This proposal allocates an initial 5,000 FAB to launch the Fabric Bounty Program. Funds will be used to reward:
+  
+  - New agent creation (500 FAB per accepted agent)
+  - CLI contributions (XP or feature extensions)
+  - Video or written tutorials
+  - Runtime bug reports and security disclosures
+
+  Rewards distributed via `fab claim` and tracked on-chain.
+
+impact:
+  - Bootstraps the contributor ecosystem
+  - Increases verified agent count in the registry
+  - Shows DAO's operational legitimacy and developer alignment
