@@ -1,0 +1,40 @@
+name: DAO Proposal → Discussion
+on:
+  push:
+    paths:
+      - 'proposals/*.yaml'
+jobs:
+  create-discussion:
+    runs-on: ubuntu-latest
+    permissions:
+      discussions: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Extract Proposal Metadata
+        id: extract
+        run: |
+          FILE=$(ls proposals/*.yaml | tail -n 1)
+          echo "file=$FILE" >> $GITHUB_ENV
+          TITLE=$(grep 'title:' $FILE | sed 's/title: //')
+          SUMMARY=$(grep 'summary:' $FILE | sed 's/summary: //')
+          echo "title=$TITLE" >> $GITHUB_ENV
+          echo "summary=$SUMMARY" >> $GITHUB_ENV
+      - name: Create GitHub Discussion
+        uses: peter-evans/create-discussion@v3
+        with:
+          title: ${{ env.title }}
+          body: |
+            **DAO Proposal Submitted**
+
+            **Proposal File:** `${{ env.file }}`
+
+            ---
+            **Summary:**  
+            ${{ env.summary }}
+
+            ---
+            🗳️ Vote on-chain:
+            ```bash
+            fab dao vote --proposal <proposal_id>
+            ```
+          category: "Governance Proposals"
