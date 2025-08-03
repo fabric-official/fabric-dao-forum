@@ -1,0 +1,18 @@
+id: DAO-001
+title: "Genesis Royalty Distribution Framework"
+summary: "Defines the initial royalty split (80% developer, 20% DAO treasury) for all Fabric agents to ensure early sustainability of the ecosystem."
+details: |
+  This proposal establishes the foundational royalty distribution policy:
+  
+  - 80% of all royalties earned by agent forks and executions go directly to the developer.
+  - 20% of royalties are routed to the DAO treasury.
+  
+  Purpose:
+  - Incentivizes developers to create and publish agents.
+  - Provides stable DAO funding to support governance, bounties, and compliance audits.
+  - Ensures a self-sustaining economy from launch.
+  
+impact:
+  - Permanent DAO treasury funding.
+  - Early developers receive immediate reward streams.
+  - Forms the base model for future royalty adjustments.
