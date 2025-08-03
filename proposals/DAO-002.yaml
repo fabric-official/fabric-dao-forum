@@ -1,0 +1,16 @@
+id: DAO-002
+title: "Activate XP Multiplier for Early Developers"
+summary: "Grants a 1.5x XP multiplier for the first 500 developers who publish or fork a Fabric agent in the first 90 days."
+details: |
+  To reward early community participation and bootstrapping, this proposal activates a 1.5x XP multiplier for:
+  
+  - Developers who publish a new agent to the registry
+  - Developers who fork an existing agent
+  - DAO proposal authors and voters
+  
+  Applies only to the first 500 unique developer wallets OR for the first 90 days (whichever comes first).
+
+impact:
+  - Encourages early activity and participation
+  - Increases XP → raises royalty multipliers
+  - Kickstarts long-term incentive loops for developers
